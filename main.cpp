@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 #define MAX_FOOD_NAME 20
 #define MAX_TYPE_NAME 30
 #define MAX_DRINK_NAME 30
@@ -14,7 +14,6 @@ void readAdditionalInfo (char str[], int *state);
 void chooseCutlery (int *cutlery, int *state, char choice);
 void displayOrder(char type[], double price, int noDrinksChosen, int chosenDrink[], char drinks[][MAX_DRINK_NAME],
                   double drinkPrice[], char str[],int *cutlery,int *state, char choice, int *ordersigned);
-
 int main() {
     int noFoods=3;
     int choice, foodChoice, typeChoice;
@@ -30,7 +29,7 @@ int main() {
     char types[3][4][MAX_TYPE_NAME] = {{"Pizza Carbonara", "Pizza Diavola", "Pizza Margherita"},
                                        {"Chicken Alfredo", "Lasagna" },
                                        {"Tuna Salad", "Chicken Salad", "Cobb","Greek Salad"}};
-    double price[3][4] =    {{21, 23, 19},
+    double price[3][4] =    {{21, 22, 19},
                              {23,21},
                              {23,22,19,21}};
     int noDrinks=3;
@@ -74,11 +73,8 @@ int main() {
                 getchar();
                 break;
         }
-
-
     }
 }
-
 void inputLogIn (char username[], char password[]){
     printf("---Username");
     gets(username);
@@ -138,7 +134,6 @@ int chooseDrinks(int noDrinks, int chosenDrinks[], int *state){
         }
         choice = getchar();
     }
-
     return noDrinksChosen;
 }
 void readAdditionalInfo (char str[], int *state) {
