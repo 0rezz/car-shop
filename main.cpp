@@ -29,7 +29,7 @@ int main() {
     char types[3][4][MAX_TYPE_NAME] = {{"Pizza Carbonara", "Pizza Diavola", "Pizza Margherita"},
                                        {"Chicken Alfredo", "Lasagna" },
                                        {"Tuna Salad", "Chicken Salad", "Cobb","Greek Salad"}};
-    double price[3][4] =    {{21, 22, 19},
+    double price[3][4] =    {{21, 24, 19},
                              {23,21},
                              {23,22,19,21}};
     int noDrinks=3;
